@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{F9D055B6-CAA3-43F9-B4ED-4FE0CE22318D}</ProjectGuid>
+    <ProjectGuid>{5350C5BA-966B-4943-9A3C-8113F2B18C15}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Decorator</RootNamespace>
-    <AssemblyName>Decorator</AssemblyName>
+    <RootNamespace>DecoradorMSG</RootNamespace>
+    <AssemblyName>DecoradorMSG</AssemblyName>
     <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -34,6 +34,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -43,11 +44,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ComponenteConcreto\Automovil.cs" />
-    <Compile Include="ComponenteConcreto\Motocicleta.cs" />
-    <Compile Include="Componente\Vehiculo.cs" />
-    <Compile Include="DecoradorConcreto\Diesel.cs" />
-    <Compile Include="DecoradorConcreto\Gasolina.cs" />
+    <Compile Include="ComponenteConcreto\MensajeConcreto.cs" />
+    <Compile Include="Componente\Mensaje.cs" />
+    <Compile Include="DecoradorConcreto\Gmail.cs" />
+    <Compile Include="DecoradorConcreto\Yahoo.cs" />
     <Compile Include="Decorador\Decorator.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
